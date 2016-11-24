@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+    <script>
+        function max(a,b){
+            return a>b?a:b;
+        }
+
+        console.log(max(2,3));
+
+        var func = max;
+        console.log(func(5,7));
+
+        function max1(){
+            var maxValue = arguments[0];
+            for (i=1;i<arguments.length;i++){
+                maxValue= max(maxValue,arguments[i]);
+            }
+            console.log(maxValue);
+        }
+
+        max1(1,2,-100,3000,5000);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
